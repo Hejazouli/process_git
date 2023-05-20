@@ -11,5 +11,8 @@ public class Main {
         List<String> filtered = strList.stream() .filter(x -> !x.isEmpty()) .collect(Collectors.toList());
         System.out.println(count);
         System.out.println(filtered);
+        List<String> G7 = Arrays.asList("USA", "Japan", "France", "Germany", "Italy", "U.K.","Canada");
+        String G7Countries = G7.stream() .map(x -> x.toUpperCase()) .collect(Collectors.joining(", "));
+        System.out.println(G7Countries);
     }
 }
